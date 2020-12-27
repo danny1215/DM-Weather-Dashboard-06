@@ -1,0 +1,98 @@
+.container-danny{
+  text-align: center;
+  background-color: #3d6488;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+body {
+  font-family: Arial;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ h6{
+   font-weight: bold;
+ }
+ #todayWeather{
+   margin-left: auto;
+   height: 100px;
+   color: black;
+   
+   
+   
+ }
+ 
+ #fiveDays{
+  margin-left: 200px;
+  margin-top: 200px;
+ }
+ 
+ #secondDay, #thirdDay,#fourthDay ,#fifthDay ,#sixDay  {
+   background-color: #3d6488;
+   height: 200px;
+   width: 200px;
+   margin-right: 200px;
+   color: white;
+ }
+
+ #toDay{
+  
+  width: 200px;
+  margin-right: 200px;
+  color: white;
+ }
+h5,p{
+  color: black;
+  font-weight: bold;
+}
+ 
+#currentTemp{
+  content: normal;
+  padding-right: 20px;
+}
+ 
+ #rowDanny{
+   margin-left: 200px;
+ }
+ 
+h3{
+  margin-left: 210px;
+  font-weight: bold;
+}
+
+#preCity{
+margin-bottom: 10px;
+}
+/* footer style */
+footer {
+  padding-bottom: 5px;
+  font-size: 15px;
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: red;
+  text-align: center;
+  
+}
+
+#saveBtn9{
+  background-color: #3d6488;
+  color: white;
+  margin-left: 5px;
+  border-radius: 1px; 
+  height: 50px;
+  width: 50px;
+
+
+} 
