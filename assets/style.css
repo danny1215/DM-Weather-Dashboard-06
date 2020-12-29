@@ -31,17 +31,22 @@ body {
    
  }
  
+ #userText{
+   
+ }
  #fiveDays{
   margin-left: 200px;
   margin-top: 200px;
+  
  }
  
- #secondDay, #thirdDay,#fourthDay ,#fifthDay ,#sixDay  {
+ #toDay, #secondDay, #thirdDay,#fourthDay ,#fifthDay ,#sixDay  {
    background-color: #3d6488;
    height: 200px;
    width: 200px;
    margin-right: 200px;
    color: white;
+   
  }
 
  #toDay{
@@ -49,6 +54,7 @@ body {
   width: 200px;
   margin-right: 200px;
   color: white;
+  background-color: #3d6488;
  }
 h5,p{
   color: black;
