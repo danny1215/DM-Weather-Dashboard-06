@@ -1,16 +1,11 @@
-// var button = document.getElementById('#searchBtn');
+var button = document.getElementById('#searchBtn');
 
 console.log("am i linked");
-// var inputValue = document.getElementById('#userText');
-// var toDayIcon = document.getElementById('#weatherIcon');
-// var toDayTemp = document.getElementById('#currentTemp');
-// var toDayHum = document.getElementById('#currentHum');
-// var toDayWind = document.getElementById('#currentWind');
-// var toDayUv = document.getElementById('#currentUv');
+
 
 // using moment js to get the date for current date and the next 5 days.
 
-// var currentDate = moment().format('MM/DD/YYYY');
+
 var dayOne = moment().add(1, "days").format("M/D/YYYY"); 
 var dayTwo = moment().add(2, "days").format("M/D/YYYY");   
 var dayThree = moment().add(3, "days").format("M/D/YYYY");   
@@ -26,7 +21,7 @@ $("#sixDate").append(dayFive);
 
 
 
-
+// function for search button
   $('#searchBtn').click(function (e) { 
     e.preventDefault();
     
@@ -35,25 +30,20 @@ $("#sixDate").append(dayFive);
     if(city !=''){
       
       
-
+// query url for open weather api
       var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=imperial&appid=1d2da0608b16fe23a0cfaff526bcd4fb";
       
-
-      
+      // ajax call
       $.ajax({
         url: queryURL,
         method: "GET"
       }).then(function(data) {
-        
+
         var thisDay = show(data);
-
-
-        $("#currentDate").append(currentDate);
+      $("#currentDate").append(currentDate);
         $("#toDay").html(thisDay);
+        UVIndex(response.coord.lon,response.coord.lat);
         
-        
-        
-
         $("#userText").val('');
 
       })
@@ -63,40 +53,31 @@ $("#sixDate").append(dayFive);
     }
   });
   
-
+  // function for current day weather
 function show(data){
-  return  "<h5> "+ data.name +"</h5>" +
-          "<h5> "+ moment().format('MM/DD/YYYY') +"</h5>" +
-        //  "<img>" + data.weather.iconId + "</img>"  +
+  
+  
+  return  "<h5 > "+ data.name +"</h5>" +
+          "<p > "+ moment().format('MM/DD/YYYY') +"</p>" +
+          // "<img scr=" + iconurl+"></img>" +
           "<p>temperature: "+ data.main.temp +"<p>" +
           "<p>humidity: "+ data.main.humidity +"</p>" +
-          "<h5>wind: "+ data.wind.speed +"</h5>" ;
-          // <p id="currentUv"></p>
-  
+          "<p>wind: "+ data.wind.speed +"</p>" ;
+         
+
+          var weatherIcon= data.weather[0].icon;
+          var iconurl="https://openweathermap.org/img/wn/"+weatherIcon +"@2x.png";
 
 }
 
-
-
-        
-        
-        
-
+// function for UV index
+function UVIndex(ln,lt){
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function forcast(data){
-  return "<h5> "+ moment().add(1, "days").format('MM/D/YYYY') +"</h5>" ;
-}
+  var uvURL="http://api.openweathermap.org/data/2.5/uvi?lat="+lt+"&lon="+ln&"appid=1d2da0608b16fe23a0cfaff526bcd4fb";
+  $.ajax({
+          url:uvURL,
+          method:"GET"
+          }).then(function(response){
+              $("#currentUv").html(reponce.value);
+          });
+};

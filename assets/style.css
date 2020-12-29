@@ -1,3 +1,4 @@
+/* container-danny style */
 .container-danny{
   text-align: center;
   background-color: #3d6488;
@@ -9,37 +10,33 @@
   margin-bottom: 20px;
   
 }
-
+/* body style */
 body {
   font-family: Arial;
   overflow-x: hidden;
 }
-
+/* box style */
 * {
   box-sizing: border-box;
 }
-
+/* h6 tag style */
  h6{
    font-weight: bold;
  }
+ /* current weather card style */
  #todayWeather{
    margin-left: auto;
    height: 100px;
    color: black;
-   
-   
-   
  }
  
- #userText{
-   
- }
+ /* five days forecast style */
  #fiveDays{
   margin-left: 200px;
   margin-top: 200px;
   
  }
- 
+ /* five days forecast  card style  */
  #toDay, #secondDay, #thirdDay,#fourthDay ,#fifthDay ,#sixDay  {
    background-color: #3d6488;
    height: 200px;
@@ -48,7 +45,7 @@ body {
    color: white;
    
  }
-
+/* current day style */
  #toDay{
   
   width: 200px;
@@ -56,25 +53,27 @@ body {
   color: white;
   background-color: #3d6488;
  }
+
+ /* h5 and p tag style */
 h5,p{
   color: black;
   font-weight: bold;
 }
- 
+ /* current temprature style */
 #currentTemp{
   content: normal;
   padding-right: 20px;
 }
- 
+ /* row danny for search input style */
  #rowDanny{
    margin-left: 200px;
  }
- 
+ /* h3 style */
 h3{
   margin-left: 210px;
   font-weight: bold;
 }
-
+/* previouse style */
 #preCity{
 margin-bottom: 10px;
 }
@@ -91,7 +90,7 @@ footer {
   text-align: center;
   
 }
-
+/* search button style */
 #searchBtn{
   background-color: #3d6488;
   color: white;
@@ -102,3 +101,33 @@ footer {
 
 
 } 
+/* image icon style */
+image{
+ content: normal;
+ width: 50px;
+ height: 50px;
+}
+
+@media screen and (max-width: 1000px){
+  .slideShow-item-text{
+      max-width: 70%;
+      padding: 5rem 1rem;
+  }
+}
+
+@media only screen and (max-width:870px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}

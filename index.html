@@ -4,18 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./assets/reset.css">
+    <!-- reset css  -->
+    <link rel="stylesheet" href="./assets/reset.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-<link rel="stylesheet" href="./assets/style.css">
+      crossorigin="anonymous"/>
+      <!-- style css link -->
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Weather Dashboard</title>
   </head>
   <body>
@@ -27,8 +26,6 @@
         <h3>search by city name:</h3>
       </div>
     </div>
-
-    
     <div class="row" id="rowDanny">
       <div class="col-sm-3">
         <div class="input-group mb-3">
@@ -38,22 +35,22 @@
           </div>
           
         </div>
+        <!-- error span where user txt != city -->
         <span id="error"></span>
       </div>
       <div id="todayWeather"class="col-sm-8">
-        <h2 id="todays">Todays weather </h2>
-        <div id="toDay" class="card-body mx-2 my-2">
-          <!-- <h5 style="float: left;" id="city"></h5> -->
+        <h2 id="todays">Todays weather: </h2>
+        <div id="toDay" class="card-body mx-3 my-3">
+          <h5 style="float: left;" id="city"></h5>
           <p  style="float: left;padding-left: 30px;" id="currentDate"></p>
-          <!-- <img style="float: right;padding-left: 80px;" id ="weatherIcon"src="" alt="">
+          <img style="float: right;padding-left: 80px;" id ="weatherIcon"src="" alt="">
           <h5 id="currentTemp"></h5>
           <p id="currentHum"></p>
           <p id="currentWind"></p>
-          <p id="currentUv"></p> -->
-         
+          <p id="currentUv"></p>
         </div>
-        
       </div>
+      <!-- input div for previouse searched -->
       <div class="col-sm-2">
         <h6>your previouse searched cities:</h6>
         <input id ="preCity1" type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -65,57 +62,52 @@
          <input id ="preCity7" type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
          <input id ="preCity8" type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
       </div>
-
+      <!-- div for 5 days forecast -->
       <div id ="fiveDays"class="col-sm-8">
         <h4>five day weather forecast:</h4>
         <div class="row justify-content-center">
+          <!-- div next day forecast -->
           <div id="secondDay" class="card-body mx-2 my-2">
-              <h5 id="secondDate"></h5>
-              <img id="secondDay_icon" src="" alt="">
-              <p id="secondDay_temp"></p>
-              <p id="secondDay_humidity"></p>
-              
+            <h5 id="secondDate"></h5>
+            <img id="secondDay_icon" src="" alt="">
+            <p id="secondDay_temp"></p>
+            <p id="secondDay_humidity"></p>
           </div>
+          <!-- div the next day forecast -->
           <div id="thirdDay" class="card-body mx-2 my-2">
-                  <h5 id="thirdDate"></h5>
-                  <img id="thirdDay_icon" src="" alt="">
-                  <p id="thirdDay_temp"></p>
-                  <p id="thirdDay_humidity"></p>
-                 
+            <h5 id="thirdDate"></h5>
+            <img id="thirdDay_icon" src="" alt="">
+            <p id="thirdDay_temp"></p>
+            <p id="thirdDay_humidity"></p>
           </div>
+          <!-- div the day after that forecast -->
           <div id="fourthDay" class="card-body mx-2 my-2"> 
-                  <h5 id="fourthDate"></h5>
-                  <img id="fourthDay_icon" src="" alt="">
-                  <p id="fourthDay_temp"></p>
-                  <p id="fourthDay_humidity"></p>
-                 
+            <h5 id="fourthDate"></h5>
+            <img id="fourthDay_icon" src="" alt="">
+            <p id="fourthDay_temp"></p>
+            <p id="fourthDay_humidity"></p>
           </div>
+          <!-- the 4th day forecast -->
           <div id="fifthDay" class="card-body mx-2 my-2">
-                  <h5 id="fifthDate"></h5>
-                  <img id="fifthDate_icon" src="" alt="">
-                  <p id="fifthDate_temp"></p>
-                  <p id="fifthDate_humidity"></p>
-                  
+            <h5 id="fifthDate"></h5>
+            <img id="fifthDate_icon" src="" alt="">
+            <p id="fifthDate_temp"></p>
+            <p id="fifthDate_humidity"></p>
           </div>
+          <!-- the 5th day forecast -->
           <div id="sixDay" class="card-body mx-2 my-2">
-                  <h5 id="sixDate"></h5>
-                  <img id="sixDay_icon" src="" alt="">
-                  <p id="sixDay_temp"></p>
-                  <p id="sixDay_humidity"></p>
-                  
-          </div>
+              <h5 id="sixDate"></h5>
+              <img id="sixDay_icon" src="" alt="">
+              <p id="sixDay_temp"></p>
+              <p id="sixDay_humidity"></p>
+            </div>
             </div>
           </div>
         </div>
         
       </div>
     </div>
-
     
-    
-    </div>
-  </div>
-
     <!-- footer tag -->
     <footer class="footer">
       <div class="container-danny1">
@@ -134,7 +126,9 @@
     -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--  javascript link -->
     <script src="./script.js"></script>
+    <!--  moment js link-->
     <script src="./library/moment.js"></script>
     
   </body>
