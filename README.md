@@ -22,7 +22,10 @@ The application works with the current time weather.
 - open weather API 
 
 ## LINK TO THE REPOSITORY
--The link is [Daniel Day Planner](https://github.com/danny1215/DM-Weather-Dashboard-06)
+-The link is [Daniel weather app](https://github.com/danny1215/DM-Weather-Dashboard-06)
 
 ## SCREENSHOTS
 
+![Screenshot (127)](https://user-images.githubusercontent.com/59859358/103330882-731c0080-4a31-11eb-9e60-c6d91ec8bbf5.png)
+
+![Screenshot (126)](https://user-images.githubusercontent.com/59859358/103330910-8dee7500-4a31-11eb-8dcf-e5eff7925a8e.png)
