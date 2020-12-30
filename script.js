@@ -57,27 +57,15 @@ $("#sixDate").append(dayFive);
 function show(data){
   
   
-  return  "<h5 > "+ data.name +"</h5>" +
-          "<p > "+ moment().format('MM/DD/YYYY') +"</p>" +
-          // "<img scr=" + iconurl+"></img>" +
-          "<p>temperature: "+ data.main.temp +"<p>" +
-          "<p>humidity: "+ data.main.humidity +"</p>" +
-          "<p>wind: "+ data.wind.speed +"</p>" ;
+  return  "<p > "+ data.name  + moment().format('MM/DD/YYYY') +
+          " <img src='http://openweathermap.org/img/w/"+ data.weather[0].icon+".png'>" +"</p>" +
+          "<p>temperature: "+ data.main.temp + "&deg;F</p>" +
+          "<p>humidity: "+ data.main.humidity +"%</p>" +
+          "<p>wind: "+ data.wind.speed + "m/s</p>" ;  
          
 
-          var weatherIcon= data.weather[0].icon;
-          var iconurl="https://openweathermap.org/img/wn/"+weatherIcon +"@2x.png";
+          
+          
 
-}
-
-// function for UV index
-function UVIndex(ln,lt){
-  
-  var uvURL="http://api.openweathermap.org/data/2.5/uvi?lat="+lt+"&lon="+ln&"appid=1d2da0608b16fe23a0cfaff526bcd4fb";
-  $.ajax({
-          url:uvURL,
-          method:"GET"
-          }).then(function(response){
-              $("#currentUv").html(reponce.value);
-          });
 };
+

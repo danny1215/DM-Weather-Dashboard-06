@@ -48,7 +48,7 @@ body {
 /* current day style */
  #toDay{
   
-  width: 200px;
+  width: 220px;
   margin-right: 200px;
   color: white;
   background-color: #3d6488;
@@ -102,11 +102,11 @@ footer {
 
 } 
 /* image icon style */
-image{
- content: normal;
- width: 50px;
- height: 50px;
-}
+/* image{
+ 
+ width: 10px;
+ height: 10px;
+} */
 
 @media screen and (max-width: 1000px){
   .slideShow-item-text{
