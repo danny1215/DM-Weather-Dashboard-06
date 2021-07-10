@@ -24,6 +24,9 @@ The application works with the current time weather.
 ## LINK TO THE REPOSITORY
 -The link is [Daniel weather app](https://github.com/danny1215/DM-Weather-Dashboard-06)
 
+## LINK TO URL 
+- https://danny1215.github.io/DM-Weather-Dashboard-06/
+
 ## SCREENSHOTS
 
 ![Screenshot (127)](https://user-images.githubusercontent.com/59859358/103330882-731c0080-4a31-11eb-9e60-c6d91ec8bbf5.png)
