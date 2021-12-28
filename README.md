@@ -29,6 +29,6 @@ The application works with the current time weather.
 
 ## SCREENSHOTS
 
-![Screenshot (127)](https://user-images.githubusercontent.com/59859358/103330882-731c0080-4a31-11eb-9e60-c6d91ec8bbf5.png)
+![Screenshot (127)](https://user-images.githubusercontent.com/59859358/147587567-cb8e081a-ab95-4b24-aac6-aa3649e53782.png)
 
 ![Screenshot (126)](https://user-images.githubusercontent.com/59859358/103330910-8dee7500-4a31-11eb-8dcf-e5eff7925a8e.png)
