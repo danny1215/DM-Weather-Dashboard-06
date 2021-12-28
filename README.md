@@ -31,4 +31,4 @@ The application works with the current time weather.
 
 ![Screenshot (127)](https://user-images.githubusercontent.com/59859358/147587567-cb8e081a-ab95-4b24-aac6-aa3649e53782.png)
 
-![Screenshot (126)](https://user-images.githubusercontent.com/59859358/103330910-8dee7500-4a31-11eb-8dcf-e5eff7925a8e.png)
+
